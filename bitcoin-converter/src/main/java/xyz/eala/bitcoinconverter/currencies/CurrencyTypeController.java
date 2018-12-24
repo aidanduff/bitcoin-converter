@@ -43,7 +43,7 @@ public class CurrencyTypeController {
 	            JSONObject obj = new JSONObject(temp.toString());
 	            JSONObject bpi = obj.getJSONObject("bpi");
 	            
-	            //currencyTypes.clear();
+	            currencyTypes.clear();
 	
 	            timeUpdated = obj.getJSONObject("time").getString("updated");
 	            String USDRate = numberFormat.format(bpi.getJSONObject("USD").getDouble("rate_float"));

@@ -7,13 +7,13 @@
     <title>Bitcoin Converter</title>
     <link type="text/css" rel="stylesheet" href="bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
 </head>
-<body>
+<body style="text-align:center;">
 	<br>
-	<div class= "container" style="outline: 1px solid grey; width: 50%;">
+	<div class= "container" style="width: 100%;">
 	    <h2 th:text="${timeUpdated}" style="text-align:center"></h2><br>
 	    <form class="form-inline" method="post">
-	    	<input type="text" name="unit" placeholder="1" style="margin: 5px;" value ="1" class="form-control"></input>
-	    	<button type="submit" class="btn btn-primary" style="margin: 5px;">Convert</button>
+	    	<input type="text" name="unit" placeholder="1" style="margin: 1em;" value ="1" class="form-control"></input>
+	    	<button type="submit" class="btn btn-primary" style="margin: 1em;">Convert</button>
 	    </form>
 	    <br>
 	    <table class="table table-striped" style="outline: 1px solid grey; margin: 5px;">
